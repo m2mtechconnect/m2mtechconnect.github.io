@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on M2M Tech | Mind to Machine Deep Learning</title>
+    <link>http://examplesite.com/blog/</link>
+    <description>Recent content in Blog on M2M Tech | Mind to Machine Deep Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    
+	<atom:link href="http://examplesite.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mission-Driven vs Market-Driven approach</title>
+      <link>http://examplesite.com/blog/mission_vs_market_driven_approach/</link>
+      <pubDate>Fri, 31 Jan 2020 12:14:34 +0600</pubDate>
+      
+      <guid>http://examplesite.com/blog/mission_vs_market_driven_approach/</guid>
+      <description>A decade ago, almost all of the major Internet platforms were American.</description>
+    </item>
+    
+    <item>
+      <title>Wings of Fire</title>
+      <link>http://examplesite.com/blog/wings_of_fire/</link>
+      <pubDate>Fri, 31 Jan 2020 12:14:34 +0600</pubDate>
+      
+      <guid>http://examplesite.com/blog/wings_of_fire/</guid>
+      <description>It&#39;s a well known fact that the holiday season of Christmas and New Year racks up lots of travel in the world&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Huawei, China and Canada</title>
+      <link>http://examplesite.com/blog/huawei_china_canada/</link>
+      <pubDate>Sat, 25 Jan 2020 12:14:34 +0600</pubDate>
+      
+      <guid>http://examplesite.com/blog/huawei_china_canada/</guid>
+      <description>Ever since the arrest of Huawei CFO Meng Wanzhou in Vancouver back in Dec 2018, Canada has been caught between two fires.</description>
+    </item>
+    
+  </channel>
+</rss>
