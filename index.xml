@@ -6,10 +6,19 @@
     <description>Recent content on M2M Tech | Mind to Machine Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jan 2020 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="https://m2mtechconnect.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Mind</title>
+      <link>https://m2mtechconnect.github.io/blog/deep_mind/</link>
+      <pubDate>Tue, 04 Feb 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://m2mtechconnect.github.io/blog/deep_mind/</guid>
+      <description>LinkedIn reports Artificial Intelligence Specialists, Robotics Engineers and Data scientists as the top emerging jobs for 2020.</description>
+    </item>
     
     <item>
       <title>Mission-Driven vs Market-Driven approach</title>
