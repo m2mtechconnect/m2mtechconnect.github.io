@@ -6,10 +6,28 @@
     <description>Recent content on M2M Tech | Mind to Machine Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Feb 2020 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="https://m2mtechconnect.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Fake Reporting</title>
+      <link>https://m2mtechconnect.github.io/blog/deep_fake_reporting/</link>
+      <pubDate>Mon, 10 Feb 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://m2mtechconnect.github.io/blog/deep_fake_reporting/</guid>
+      <description>More than 11000 athletes from almost every country in the world will be competing in 33 different sports for 2020 Summer Olympics&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Narrow AI</title>
+      <link>https://m2mtechconnect.github.io/blog/narrow_ai/</link>
+      <pubDate>Thu, 06 Feb 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://m2mtechconnect.github.io/blog/narrow_ai/</guid>
+      <description>Companies around the world are now starting to tap into the massive potential of AI and Deep Learning to decipher human speech&amp;hellip;</description>
+    </item>
     
     <item>
       <title>Deep Mind</title>
@@ -18,15 +36,6 @@
       
       <guid>https://m2mtechconnect.github.io/blog/deep_mind/</guid>
       <description>LinkedIn reports Artificial Intelligence Specialists, Robotics Engineers and Data scientists as the top emerging jobs for 2020.</description>
-    </item>
-    
-    <item>
-      <title>Narrow AI</title>
-      <link>https://m2mtechconnect.github.io/blog/narrow_ai/</link>
-      <pubDate>Tue, 04 Feb 2020 12:14:34 +0600</pubDate>
-      
-      <guid>https://m2mtechconnect.github.io/blog/narrow_ai/</guid>
-      <description>Companies around the world are now starting to tap into the massive potential of AI and Deep Learning to decipher human speech&amp;hellip;</description>
     </item>
     
     <item>
