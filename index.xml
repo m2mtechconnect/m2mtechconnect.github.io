@@ -6,10 +6,19 @@
     <description>Recent content on M2M Tech | Mind to Machine Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Feb 2020 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="https://m2mtechconnect.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AI and Corporate Culture</title>
+      <link>https://m2mtechconnect.github.io/blog/ai_and_corporate_culture/</link>
+      <pubDate>Sat, 22 Feb 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://m2mtechconnect.github.io/blog/ai_and_corporate_culture/</guid>
+      <description>Big Data business consulting for huge multinational corporations and governments have been around since early 2000.</description>
+    </item>
     
     <item>
       <title>Deep Fake Reporting</title>
