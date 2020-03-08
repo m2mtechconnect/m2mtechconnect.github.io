@@ -6,10 +6,28 @@
     <description>Recent content on M2M Tech | Mind to Machine Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="https://m2mtechconnect.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quest for Perception</title>
+      <link>https://m2mtechconnect.github.io/blog/quest_for_perception/</link>
+      <pubDate>Sat, 29 Feb 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://m2mtechconnect.github.io/blog/quest_for_perception/</guid>
+      <description>When you order your meal through Alexa from your home, do you associate yourself as being online or offline?</description>
+    </item>
+    
+    <item>
+      <title>Democratization of Expertise</title>
+      <link>https://m2mtechconnect.github.io/blog/democratization_of_expertise/</link>
+      <pubDate>Tue, 25 Feb 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://m2mtechconnect.github.io/blog/democratization_of_expertise/</guid>
+      <description>There is been a growing optimism in Vancouver tech scene recently and many Vancouver based startups are now&amp;hellip;</description>
+    </item>
     
     <item>
       <title>AI and Corporate Culture</title>
