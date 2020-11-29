@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contact on M2M Tech | Mind to Machine Deep Learning</title>
-    <link>https://m2mtechconnect.github.io/contact/</link>
-    <description>Recent content in Contact on M2M Tech | Mind to Machine Deep Learning</description>
+    <title>About Us on M2M TECH | Mind to Machine Connect</title>
+    <link>http://examplesite.org/contact/</link>
+    <description>Recent content in About Us on M2M TECH | Mind to Machine Connect</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    <copyright>Copyright &amp;copy; 2020 M2M TECH</copyright>
     
-	<atom:link href="https://m2mtechconnect.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://examplesite.org/contact/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
