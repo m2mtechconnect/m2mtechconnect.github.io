@@ -8,12 +8,13 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
 @font-face {
   font-family: 'futura-bold';
   src: url("../fonts/Futura-Bold.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 body {
   line-height: 1.2;
@@ -106,17 +107,17 @@ h6, .h6 {
   padding: 5px 15px; }
 
 .btn-primary {
-  color: #fff;
+  color: #1a1a37;
   background-color: #ffbc3b; }
   .btn-primary::before {
     background-color: #fff; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary.active {
-    color: #ffbc3b !important;
+    color: #1a1a37 !important;
     background-color: #ffab08 !important;
-    border-color: #ffab08 !important; }
+    border-color: #0a0a14 !important; }
 
 .btn-outline-primary {
-  color: #ffbc3b;
+  color: #1a1a37;
   background-color: transparent;
   border: 1px solid #ffbc3b; }
   .btn-outline-primary::before {
@@ -127,7 +128,7 @@ h6, .h6 {
     border-color: #ffbc3b !important; }
 
 .btn-light {
-  color: #ffbc3b;
+  color: #474747;
   background-color: #fff;
   border: 1px solid #fff; }
   .btn-light::before {
@@ -255,7 +256,7 @@ a h4:hover {
   color: #5c5c77; }
 
 .text-light {
-  color: #8585a4 !important; }
+  color: #b0b8c0 !important; }
 
 .text-lighten {
   color: #d6d6e0 !important; }
