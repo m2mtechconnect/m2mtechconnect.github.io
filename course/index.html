@@ -8,7 +8,7 @@
   <meta name="description"
     content="Our Summer 2021 (Jul 2021 - Aug 2021) STEM workshops portfolio - Now Accepting Registration. All our workshops are live workshops (no recordings) run by Canadian presenters with required technical knowledge on the topics.">
   
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <!-- multilingual SEO optimizations -->
   
 
@@ -45,26 +45,51 @@
 
    
 
-</head><body style='background: #657383;' data-backgrounds='bg/1.jpg,bg/2.jpg,bg/3.jpg,bg/4.jpg,'>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head><body style='background: #657383;' data-backgrounds='bg/1.jpg,bg/2.jpg,bg/3.jpg,bg/4.jpg,bg/5.jpg,bg/6.jpg,bg/7.jpg,'>
 	<main>
 		
 
 <div class="nav-panel">
     <nav>
         <ul>
-            <li class="tag"><a data-tooltip="All" href="course/#"><i class="icon fa fa-th" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Ages 9-11" href="course/#child"><i class="icon fa fa-child" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Ages 12-18" href="course/#teen"><i class="icon fa fa-user" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Home" href="/#"><i class="icon fa fa-home" aria-hidden="true"></i></a></li>
-
+            <li class="tag"><a data-tooltip="All" href="course/#all"><i class="icon fa fa-th"
+                        aria-hidden="true"></i></a></li>
+             <li class="tag"><a data-tooltip="Ages 9-11" href="course/#child"><i
+            class="icon fa fa-child" aria-hidden="true"></i></a></li> <li class="tag"><a data-tooltip="Ages 12-18" href="course/#teen"><i
+            class="icon fa fa-user" aria-hidden="true"></i></a></li> <li class="tag"><a data-tooltip="Home" href="/#home"><i
+            class="icon fa fa-home" aria-hidden="true"></i></a></li>
         </ul>
     </nav>
 </div>
-
+<script>
+    function highlightCurrentItem() {
+        var tag = $(location).attr('hash');
+        $('li').each(function (i) {
+            var hash = $(this).children().first()[0].hash;
+            if (hash === tag || (tag === "" && hash === "#all")) {
+                $('li').removeClass('highlight_stay');
+                $(this).addClass('highlight_stay');
+            }
+        });
+    }
+    function spaceOutHome(){
+        $('li').each(function (i) {
+            var hash = $(this).children().first()[0].hash;
+            if (hash === "#home") {
+                $(this).addClass('space');
+            }
+        });
+    }
+    spaceOutHome();
+    highlightCurrentItem();
+    window.addEventListener('hashchange', highlightCurrentItem, false);
+</script>
 
 <section class="section">
     <div class="container"><div class="tile-container">
-<a class="tile tile-link" href="about_course/ai_deep_dive_level1/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/ai_deep_dive_level1/" data-groups='teen' >
     <div class="tile-box"
         data-title='AI Deep Dive I'
         data-url='about_course/ai_deep_dive_level1/'
@@ -73,7 +98,7 @@
     <div class="tile-title">AI Deep Dive I</div>
 </a>
 
-<a class="tile tile-link" href="about_course/ai_marketing/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/ai_marketing/" data-groups='teen' >
     <div class="tile-box"
         data-title='AI Marketing'
         data-url='about_course/ai_marketing/'
@@ -82,7 +107,7 @@
     <div class="tile-title">AI Marketing</div>
 </a>
 
-<a class="tile tile-link" href="about_course/app_design_with_flutter/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/app_design_with_flutter/" data-groups='teen' >
     <div class="tile-box"
         data-title='Flutter App Design'
         data-url='about_course/app_design_with_flutter/'
@@ -91,7 +116,7 @@
     <div class="tile-title">Flutter App Design</div>
 </a>
 
-<a class="tile tile-link" href="about_course/building_cool_mobile_apps/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/building_cool_mobile_apps/" data-groups='teen' >
     <div class="tile-box"
         data-title='Build Mobile Apps'
         data-url='about_course/building_cool_mobile_apps/'
@@ -100,7 +125,7 @@
     <div class="tile-title">Build Mobile Apps</div>
 </a>
 
-<a class="tile tile-link" href="about_course/building_stunning_websites/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/building_stunning_websites/" data-groups='teen' >
     <div class="tile-box"
         data-title='Build Websites'
         data-url='about_course/building_stunning_websites/'
@@ -109,7 +134,7 @@
     <div class="tile-title">Build Websites</div>
 </a>
 
-<a class="tile tile-link" href="about_course/coding_fun_with_python/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/coding_fun_with_python/" data-groups='teen' >
     <div class="tile-box"
         data-title='Python Coding'
         data-url='about_course/coding_fun_with_python/'
@@ -118,7 +143,7 @@
     <div class="tile-title">Python Coding</div>
 </a>
 
-<a class="tile tile-link" href="about_course/cool_apps_with_flutter/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/cool_apps_with_flutter/" data-groups='teen' >
     <div class="tile-box"
         data-title='Flutter Cool Apps'
         data-url='about_course/cool_apps_with_flutter/'
@@ -127,7 +152,7 @@
     <div class="tile-title">Flutter Cool Apps</div>
 </a>
 
-<a class="tile tile-link" href="about_course/digital_marketing_and_entrepreneurship/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/digital_marketing_and_entrepreneurship/" data-groups='teen' >
     <div class="tile-box"
         data-title='Digital Marketing'
         data-url='about_course/digital_marketing_and_entrepreneurship/'
@@ -136,7 +161,7 @@
     <div class="tile-title">Digital Marketing</div>
 </a>
 
-<a class="tile tile-link" href="about_course/gaming_with_embedded_system/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/gaming_with_embedded_system/" data-groups='teen' >
     <div class="tile-box"
         data-title='Embedded System Gaming'
         data-url='about_course/gaming_with_embedded_system/'
@@ -145,7 +170,7 @@
     <div class="tile-title">Embedded System Gaming</div>
 </a>
 
-<a class="tile tile-link" href="about_course/internet_of_things/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/internet_of_things/" data-groups='teen' >
     <div class="tile-box"
         data-title='Internet of Things'
         data-url='about_course/internet_of_things/'
@@ -154,7 +179,7 @@
     <div class="tile-title">Internet of Things</div>
 </a>
 
-<a class="tile tile-link" href="about_course/python_and_ai/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/python_and_ai/" data-groups='teen' >
     <div class="tile-box"
         data-title='Python &amp; AI'
         data-url='about_course/python_and_ai/'
@@ -163,7 +188,7 @@
     <div class="tile-title">Python &amp; AI</div>
 </a>
 
-<a class="tile tile-link" href="about_course/python_and_data_science/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/python_and_data_science/" data-groups='teen' >
     <div class="tile-box"
         data-title='Python &amp; Data Science'
         data-url='about_course/python_and_data_science/'
@@ -172,7 +197,7 @@
     <div class="tile-title">Python &amp; Data Science</div>
 </a>
 
-<a class="tile tile-link" href="about_course/semester_group_pricing/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/semester_group_pricing/" data-groups='teen' >
     <div class="tile-box"
         data-title='Summer 2021'
         data-url='about_course/semester_group_pricing/'
@@ -181,16 +206,16 @@
     <div class="tile-title">Summer 2021</div>
 </a>
 
-<a class="tile tile-link" href="about_course/virutal_reality_and_more/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/virtual_reality_and_more/" data-groups='teen' >
     <div class="tile-box"
         data-title='VR &amp; More'
-        data-url='about_course/virutal_reality_and_more/'
+        data-url='about_course/virtual_reality_and_more/'
         data-img='images/courses/course-7.png'>
         <img class="logo" src="images/courses/course-7.png"></img></div>
     <div class="tile-title">VR &amp; More</div>
 </a>
 
-<a class="tile tile-link" href="about_course/annual_group_pricing/" data-groups='teen' target="_blank">
+<a class="tile tile-link" href="about_course/annual_group_pricing/" data-groups='teen' >
     <div class="tile-box"
         data-title='Year-round Workshops'
         data-url='about_course/annual_group_pricing/'
@@ -199,7 +224,7 @@
     <div class="tile-title">Year-round Workshops</div>
 </a>
 
-<a class="tile tile-link" href="about_course/code_blocks/" data-groups='child' target="_blank">
+<a class="tile tile-link" href="about_course/code_blocks/" data-groups='child' >
     <div class="tile-box"
         data-title='Code Blocks I'
         data-url='about_course/code_blocks/'
@@ -208,7 +233,7 @@
     <div class="tile-title">Code Blocks I</div>
 </a>
 
-<a class="tile tile-link" href="about_course/code_blocks_level2/" data-groups='child' target="_blank">
+<a class="tile tile-link" href="about_course/code_blocks_level2/" data-groups='child' >
     <div class="tile-box"
         data-title='Code Blocks II'
         data-url='about_course/code_blocks_level2/'
