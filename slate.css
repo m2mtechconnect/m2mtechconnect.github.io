@@ -175,7 +175,7 @@ nav {
   -webkit-mask-position: 50% 15px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 23px;
-  vertical-align: top; }
+  vertical-align: inherit; }
 
 .icon:hover {
   opacity: 1; }
