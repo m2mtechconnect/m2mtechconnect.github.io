@@ -174,7 +174,8 @@ nav {
   transition: background-color 0.3s, opacity 0.3s, -webkit-mask-size 0.3s;
   -webkit-mask-position: 50% 15px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 23px; }
+  -webkit-mask-size: 23px;
+  vertical-align: top; }
 
 .icon:hover {
   opacity: 1; }
@@ -245,13 +246,13 @@ body {
   padding: 480px 0 0 0; }
   @media (max-width: 1200px) {
     .space {
-      padding: 570px 0 0 0; } }
+      padding: 400px 0 0 0; } }
   @media (max-width: 767px) {
     .space {
       padding: 520px 0 0 0; } }
   @media (max-width: 575px) {
     .space {
-      padding: 500px 0 0 0; } }
+      padding: 450px 0 0 0; } }
   @media (max-width: 370px) {
     .space {
       padding: 350px 0 0 0; } }
@@ -259,13 +260,13 @@ body {
   padding: 210px 0 0 0; }
   @media (max-width: 1200px) {
     .online_space {
-      padding: 300px 0 0 0; } }
+      padding: 150px 0 0 0; } }
   @media (max-width: 767px) {
     .online_space {
-      padding: 250px 0 0 0; } }
+      padding: 150px 0 0 0; } }
   @media (max-width: 575px) {
     .online_space {
-      padding: 230px 0 0 0; } }
+      padding: 200px 0 0 0; } }
   @media (max-width: 370px) {
     .online_space {
       padding: 80px 0 0 0; } }
