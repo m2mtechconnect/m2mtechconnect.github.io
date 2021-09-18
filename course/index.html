@@ -12,552 +12,277 @@
   <!-- multilingual SEO optimizations -->
   
 
-  <!-- plugins -->
-  
-  <link rel="stylesheet" href="https://m2mtechconnect.github.io/plugins/bootstrap/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="https://m2mtechconnect.github.io/plugins/slick/slick.css">
-  
-  <link rel="stylesheet" href="https://m2mtechconnect.github.io/plugins/animate/animate.css">
-  
-  <link rel="stylesheet" href="https://m2mtechconnect.github.io/plugins/venobox/venobox.css">
-  
-  <link rel="stylesheet" href="https://m2mtechconnect.github.io/plugins/themify-icons/themify-icons.css">
-  
+<!-- plugins -->
 
-  <!-- Main Stylesheet -->
-  
-  <link rel="stylesheet" href="https://m2mtechconnect.github.io/scss/style.css" media="screen">
+<link rel="stylesheet" href="https://m2mtechconnect.com/plugins/bootstrap/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://m2mtechconnect.com/plugins/slick/slick.css">
+
+<link rel="stylesheet" href="https://m2mtechconnect.com/plugins/animate/animate.css">
+
+<link rel="stylesheet" href="https://m2mtechconnect.com/plugins/venobox/venobox.css">
+
+<link rel="stylesheet" href="https://m2mtechconnect.com/plugins/themify-icons/themify-icons.css">
+
+
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="https://m2mtechconnect.com/slate.css" media="screen">
+
+<style>
+  .check-mark::before {
+    font-family: "";
+    font-weight: 900;
+    content: "\f058";
+    display: none;
+  }
+</style>
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://m2mtechconnect.github.io/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="https://m2mtechconnect.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://m2mtechconnect.com/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://m2mtechconnect.com/images/favicon.png" type="image/x-icon">
+	<base href="https://m2mtechconnect.com/">
 
-</head><body>
-<!-- preloader start -->
-<div class="preloader">
-  
-  <img src="https://m2mtechconnect.github.io/images/preloader.gif" alt="preloader">
-  
-</div>
-<!-- preloader end -->
+   
 
-<header class="fixed-top header">
-  
-  
-  
-  <div class="navigation w-100 ">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand" href="/"><img class="img-fluid"
-            src="https://m2mtechconnect.github.io/images/logo.png" alt="M2M TECH | Mind to Machine Connect"></a>
-        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-        <div class="collapse navbar-collapse text-center" id="navigation">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://m2mtechconnect.github.io">Home</a>
-            </li>
-            
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://m2mtechconnect.github.io/course">Course</a>
-            </li>
-            
-            
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://m2mtechconnect.github.io/about">About</a>
-            </li>
-            
-            
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://m2mtechconnect.github.io/contact">Contact</a>
-            </li>
-            
-            
-          </ul>
+</head><body style='background: #657383;' data-backgrounds='bg/b1920-002.jpg,'>
+	<main>
+		
 
-          
-          
-        </div>
-      </nav>
-    </div>
-  </div>
-</header>
-
-
-	
-<section class="page-title-section overlay" style="background-image: url('/images/backgrounds/page-title.png'),url('/images/backgrounds/page-title.jpg');" >
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item h2"><a class="text-primary font-secondary" href="https://m2mtechconnect.github.io">Home</a></li>
-          <li class="list-inline-item h5"><i class="ti-angle-right text-white"></i></li>
-          <li class="list-inline-item text-white h3 font-secondary">Our Courses</li>
+<div class="nav-panel">
+    <nav>
+        <ul>
+            <li class="tag"><a data-tooltip="All" href="course/#all"><i class="icon fa fa-th"
+                        aria-hidden="true"></i></a></li>
+             <li class="tag"><a data-tooltip="Ages 9-11" href="course/#child"><i
+            class="icon fa fa-child" aria-hidden="true"></i></a></li> <li class="tag"><a data-tooltip="Ages 12-18" href="course/#teen"><i
+            class="icon fa fa-user" aria-hidden="true"></i></a></li> <li class="tag"><a data-tooltip="Home" href="/#home"><i
+            class="icon fa fa-home" aria-hidden="true"></i></a></li>
         </ul>
-        <p class="text-lighten">Our Summer 2021 (Jul 2021 - Aug 2021) STEM workshops portfolio - Now Accepting Registration. All our workshops are live workshops (no recordings) run by Canadian presenters with required technical knowledge on the topics.</p>
-      </div>
-    </div>
-  </div>
-</section>
-	
-
+    </nav>
+</div>
+<script>
+    function highlightCurrentItem() {
+        var tag = $(location).attr('hash');
+        $('li').each(function (i) {
+            var hash = $(this).children().first()[0].hash;
+            if (hash === tag || (tag === "" && hash === "#all")) {
+                $('li').removeClass('highlight_stay');
+                $(this).addClass('highlight_stay');
+            }
+        });
+    }
+    function spaceOutHome(){
+        $('li').each(function (i) {
+            var hash = $(this).children().first()[0].hash;
+            if (hash === "#home") {
+                $(this).addClass('space');
+            }
+        });
+    }
+    spaceOutHome();
+    highlightCurrentItem();
+    window.addEventListener('hashchange', highlightCurrentItem, false);
+</script>
 
 <section class="section">
-  <div class="container">
-    
-    <div class="row justify-content-center">
-      
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/ai_deep_dive_level1/" img class="card-img-top rounded-0" src="/images/courses/course-18.png" alt="AI Deep Dive I">
-    <img class="card-img-top rounded-0" src="/images/courses/course-18.png" alt="AI Deep Dive I">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/ai_deep_dive_level1/">AI Deep Dive I</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/ai_deep_dive_level1/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
+    <div class="container"><div class="tile-container">
+<a class="tile tile-link" href="about_course/ai_deep_dive_level1/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='AI Deep Dive I'
+        data-url='about_course/ai_deep_dive_level1/'
+        data-img='images/courses/course-18.png'>
+        <img class="logo" src="images/courses/course-18.png"></img></div>
+    <div class="tile-title">AI Deep Dive I</div>
+</a>
+
+<a class="tile tile-link" href="about_course/ai_marketing/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='AI Marketing'
+        data-url='about_course/ai_marketing/'
+        data-img='images/courses/course-11.png'>
+        <img class="logo" src="images/courses/course-11.png"></img></div>
+    <div class="tile-title">AI Marketing</div>
+</a>
+
+<a class="tile tile-link" href="about_course/app_design_with_flutter/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Flutter App Design'
+        data-url='about_course/app_design_with_flutter/'
+        data-img='images/courses/course-12.png'>
+        <img class="logo" src="images/courses/course-12.png"></img></div>
+    <div class="tile-title">Flutter App Design</div>
+</a>
+
+<a class="tile tile-link" href="about_course/building_cool_mobile_apps/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Build Mobile Apps'
+        data-url='about_course/building_cool_mobile_apps/'
+        data-img='images/courses/course-5.png'>
+        <img class="logo" src="images/courses/course-5.png"></img></div>
+    <div class="tile-title">Build Mobile Apps</div>
+</a>
+
+<a class="tile tile-link" href="about_course/building_stunning_websites/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Build Websites'
+        data-url='about_course/building_stunning_websites/'
+        data-img='images/courses/course-4.png'>
+        <img class="logo" src="images/courses/course-4.png"></img></div>
+    <div class="tile-title">Build Websites</div>
+</a>
+
+<a class="tile tile-link" href="about_course/coding_fun_with_python/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Python Coding'
+        data-url='about_course/coding_fun_with_python/'
+        data-img='images/courses/course-1.png'>
+        <img class="logo" src="images/courses/course-1.png"></img></div>
+    <div class="tile-title">Python Coding</div>
+</a>
+
+<a class="tile tile-link" href="about_course/cool_apps_with_flutter/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Flutter Cool Apps'
+        data-url='about_course/cool_apps_with_flutter/'
+        data-img='images/courses/course-12.png'>
+        <img class="logo" src="images/courses/course-12.png"></img></div>
+    <div class="tile-title">Flutter Cool Apps</div>
+</a>
+
+<a class="tile tile-link" href="about_course/digital_marketing_and_entrepreneurship/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Digital Marketing'
+        data-url='about_course/digital_marketing_and_entrepreneurship/'
+        data-img='images/courses/course-6.png'>
+        <img class="logo" src="images/courses/course-6.png"></img></div>
+    <div class="tile-title">Digital Marketing</div>
+</a>
+
+<a class="tile tile-link" href="about_course/gaming_with_embedded_system/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Embedded System Gaming'
+        data-url='about_course/gaming_with_embedded_system/'
+        data-img='images/courses/course-3.png'>
+        <img class="logo" src="images/courses/course-3.png"></img></div>
+    <div class="tile-title">Embedded System Gaming</div>
+</a>
+
+<a class="tile tile-link" href="about_course/internet_of_things/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Internet of Things'
+        data-url='about_course/internet_of_things/'
+        data-img='images/courses/course-14.png'>
+        <img class="logo" src="images/courses/course-14.png"></img></div>
+    <div class="tile-title">Internet of Things</div>
+</a>
+
+<a class="tile tile-link" href="about_course/python_and_ai/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Python &amp; AI'
+        data-url='about_course/python_and_ai/'
+        data-img='images/courses/course-10.png'>
+        <img class="logo" src="images/courses/course-10.png"></img></div>
+    <div class="tile-title">Python &amp; AI</div>
+</a>
+
+<a class="tile tile-link" href="about_course/python_and_data_science/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Python &amp; Data Science'
+        data-url='about_course/python_and_data_science/'
+        data-img='images/courses/course-2.png'>
+        <img class="logo" src="images/courses/course-2.png"></img></div>
+    <div class="tile-title">Python &amp; Data Science</div>
+</a>
+
+<a class="tile tile-link" href="about_course/semester_group_pricing/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Summer 2021'
+        data-url='about_course/semester_group_pricing/'
+        data-img='images/courses/course-8.png'>
+        <img class="logo" src="images/courses/course-8.png"></img></div>
+    <div class="tile-title">Summer 2021</div>
+</a>
+
+<a class="tile tile-link" href="about_course/virtual_reality_and_more/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='VR &amp; More'
+        data-url='about_course/virtual_reality_and_more/'
+        data-img='images/courses/course-7.png'>
+        <img class="logo" src="images/courses/course-7.png"></img></div>
+    <div class="tile-title">VR &amp; More</div>
+</a>
+
+<a class="tile tile-link" href="about_course/annual_group_pricing/" data-groups='teen' >
+    <div class="tile-box"
+        data-title='Year-round Workshops'
+        data-url='about_course/annual_group_pricing/'
+        data-img='images/courses/course-9.png'>
+        <img class="logo" src="images/courses/course-9.png"></img></div>
+    <div class="tile-title">Year-round Workshops</div>
+</a>
+
+<a class="tile tile-link" href="about_course/code_blocks/" data-groups='child' >
+    <div class="tile-box"
+        data-title='Code Blocks I'
+        data-url='about_course/code_blocks/'
+        data-img='images/courses/course-17.png'>
+        <img class="logo" src="images/courses/course-17.png"></img></div>
+    <div class="tile-title">Code Blocks I</div>
+</a>
+
+<a class="tile tile-link" href="about_course/code_blocks_level2/" data-groups='child' >
+    <div class="tile-box"
+        data-title='Code Blocks II'
+        data-url='about_course/code_blocks_level2/'
+        data-img='images/courses/course-11.png'>
+        <img class="logo" src="images/courses/course-11.png"></img></div>
+    <div class="tile-title">Code Blocks II</div>
+</a>
+
 </div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/ai_marketing/" img class="card-img-top rounded-0" src="/images/courses/course-11.png" alt="AI Marketing">
-    <img class="card-img-top rounded-0" src="/images/courses/course-11.png" alt="AI Marketing">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/ai_marketing/">AI Marketing</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/ai_marketing/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
 </div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/app_design_with_flutter/" img class="card-img-top rounded-0" src="/images/courses/course-12.png" alt="App Design with Flutter">
-    <img class="card-img-top rounded-0" src="/images/courses/course-12.png" alt="App Design with Flutter">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/app_design_with_flutter/">App Design with Flutter</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/app_design_with_flutter/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/building_cool_mobile_apps/" img class="card-img-top rounded-0" src="/images/courses/course-5.png" alt="Building cool Mobile Apps">
-    <img class="card-img-top rounded-0" src="/images/courses/course-5.png" alt="Building cool Mobile Apps">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/building_cool_mobile_apps/">Building cool Mobile Apps</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/building_cool_mobile_apps/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/building_stunning_websites/" img class="card-img-top rounded-0" src="/images/courses/course-4.png" alt="Building stunning websites">
-    <img class="card-img-top rounded-0" src="/images/courses/course-4.png" alt="Building stunning websites">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/building_stunning_websites/">Building stunning websites</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/building_stunning_websites/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/code_blocks/" img class="card-img-top rounded-0" src="/images/courses/course-13.png" alt="Code Blocks">
-    <img class="card-img-top rounded-0" src="/images/courses/course-13.png" alt="Code Blocks">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/code_blocks/">Code Blocks</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/code_blocks/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/code_blocks_level2/" img class="card-img-top rounded-0" src="/images/courses/course-17.png" alt="Code Blocks II">
-    <img class="card-img-top rounded-0" src="/images/courses/course-17.png" alt="Code Blocks II">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/code_blocks_level2/">Code Blocks II</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/code_blocks_level2/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/coding_fun_with_python/" img class="card-img-top rounded-0" src="/images/courses/course-1.png" alt="Coding Fun with Python">
-    <img class="card-img-top rounded-0" src="/images/courses/course-1.png" alt="Coding Fun with Python">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/coding_fun_with_python/">Coding Fun with Python</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/coding_fun_with_python/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/cool_apps_with_flutter/" img class="card-img-top rounded-0" src="/images/courses/course-12.png" alt="Cool Apps with Flutter">
-    <img class="card-img-top rounded-0" src="/images/courses/course-12.png" alt="Cool Apps with Flutter">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/cool_apps_with_flutter/">Cool Apps with Flutter</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/cool_apps_with_flutter/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/digital_marketing_and_entrepreneurship/" img class="card-img-top rounded-0" src="/images/courses/course-6.png" alt="Digital Marketing &amp; Entrepreneurship">
-    <img class="card-img-top rounded-0" src="/images/courses/course-6.png" alt="Digital Marketing &amp; Entrepreneurship">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/digital_marketing_and_entrepreneurship/">Digital Marketing &amp; Entrepreneurship</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/digital_marketing_and_entrepreneurship/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/gaming_with_embedded_system/" img class="card-img-top rounded-0" src="/images/courses/course-3.png" alt="Gaming with Embedded System">
-    <img class="card-img-top rounded-0" src="/images/courses/course-3.png" alt="Gaming with Embedded System">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/gaming_with_embedded_system/">Gaming with Embedded System</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/gaming_with_embedded_system/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/internet_of_things/" img class="card-img-top rounded-0" src="/images/courses/course-14.png" alt="Internet of Things">
-    <img class="card-img-top rounded-0" src="/images/courses/course-14.png" alt="Internet of Things">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/internet_of_things/">Internet of Things</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/internet_of_things/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/python_and_ai/" img class="card-img-top rounded-0" src="/images/courses/course-10.png" alt="Python &amp; AI">
-    <img class="card-img-top rounded-0" src="/images/courses/course-10.png" alt="Python &amp; AI">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/python_and_ai/">Python &amp; AI</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/python_and_ai/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/python_and_data_science/" img class="card-img-top rounded-0" src="/images/courses/course-2.png" alt="Python &amp; Data Science">
-    <img class="card-img-top rounded-0" src="/images/courses/course-2.png" alt="Python &amp; Data Science">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/python_and_data_science/">Python &amp; Data Science</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/python_and_data_science/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/semester_group_pricing/" img class="card-img-top rounded-0" src="/images/courses/course-8.png" alt="Semester - Summer 2021">
-    <img class="card-img-top rounded-0" src="/images/courses/course-8.png" alt="Semester - Summer 2021">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding &amp; Design</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/semester_group_pricing/">Semester - Summer 2021</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/semester_group_pricing/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/virtual_reality_and_more/" img class="card-img-top rounded-0" src="/images/courses/course-7.png" alt="Virtual Reality &amp; More">
-    <img class="card-img-top rounded-0" src="/images/courses/course-7.png" alt="Virtual Reality &amp; More">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 02 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Design Thinking</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/virtual_reality_and_more/">Virtual Reality &amp; More</a></h4>
-    <p class="card-text mb-4">About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/virtual_reality_and_more/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card p-0 border-primary rounded-0 hover-shadow">
-  
-  <a href="https://m2mtechconnect.github.io/course/annual_group_pricing/" img class="card-img-top rounded-0" src="/images/courses/course-9.png" alt="Year Round workshops">
-    <img class="card-img-top rounded-0" src="/images/courses/course-9.png" alt="Year Round workshops">
-  </a>  
-  <div class="card-body">
-    <ul class="list-inline mb-2">
-      <li class="list-inline-item"><i class="ti-calendar"></i> 12 Months</li>
-      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Coding &amp; Design</li>
-    </ul>
-    <h4 class="card-title"><a href="https://m2mtechconnect.github.io/course/annual_group_pricing/">Year Round workshops</a></h4>
-    <p class="card-text mb-4">About Course: Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with …</p>
-    <a href="https://m2mtechconnect.github.io/course/annual_group_pricing/" class="btn btn-primary btn-sm">Learn More</a>
-  </div>
-</div>
-      </div>
-      
-    </div>
-    
-  </div>
 </section>
 
 
+	</main>
+</body>
 
-<footer>
-  
-  
-  
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Newsletter</h3>
-          <form action="http://eepurl.com/gTolU1" method="post" name="mc-embedded-subscribe-form" target="_blank">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Click join and enter details…">
-              <button type="submit" name="subscribe" class="btn btn-primary">Join</button>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_e5c23504a89d478fb8efcda11_6b54fe4b80" tabindex="-1">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="footer bg-footer section border-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
-          
-          <a class="logo-footer" href="/"><img class="img-fluid mb-4" src="https://m2mtechconnect.github.io/images/logo.png" alt="M2M TECH | Mind to Machine Connect"></a>
-          <ul class="list-unstyled">
-            <li class="mb-4">Greater Vancouver, BC</li>
-            <li class="mb-4"><a href="mailto:contact@m2mtechconnect.com">contact@m2mtechconnect.com</a></li>
-            <li class="mb-4"></li>
-          </ul>
-        </div> 
-        
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">company</h4>
-          <ul class="list-unstyled">
-            
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/course">Course</a></li>
-            
-            
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/about">About</a></li>
-            
-            
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/contact">Contact</a></li>
-            
-            
-          </ul>
-        </div>
-        
-        
-        
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">Courses</h4>
-          <ul class="list-unstyled">
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/course/ai_deep_dive_level1/">AI Deep Dive I</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/course/ai_marketing/">AI Marketing</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/course/app_design_with_flutter/">App Design with Flutter</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/course/building_cool_mobile_apps/">Building cool Mobile Apps</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="https://m2mtechconnect.github.io/course/building_stunning_websites/">Building stunning websites</a></li>
-            
-          </ul>
-        </div>
-        
-        
-       </div>
-    </div>
-  </div> 
-  
-  <div class="copyright py-4 bg-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">Copyright © 2021 M2M TECH</p>
-        </div>
-        <div class="col-sm-5 text-sm-right text-center">
-          <ul class="list-inline">
-            
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/m2mtechconnect"><i class="ti-twitter-alt text-primary"></i></a></li>
-            
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.instagram.com/m2mtechconnect/"><i class="ti-instagram text-primary"></i></a></li>
-            
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://courses.m2mtechconnect.com/"><i class="ti-github text-primary"></i></a></li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<script src="https://cdn.jsdelivr.net/gh/theprojectsomething/webfontloader@feature/google-fonts-v2/webfontloader.js"></script>
 
 
-<!-- Google Map API -->
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-
+<script>
+  WebFont.load({
+    google: {
+      api: 'https://fonts.googleapis.com/css2',
+      families: ['Lato:wght@400&display=swap'],
+      version: 2
+    },
+    active: () => {
+      sessionStorage.fontsLoaded = true
+    }
+  });
+</script>
 
 <!-- JS Plugins -->
 
-<script src="https://m2mtechconnect.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://m2mtechconnect.com/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://m2mtechconnect.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://m2mtechconnect.com/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://m2mtechconnect.github.io/plugins/slick/slick.min.js"></script>
+<script src="https://m2mtechconnect.com/plugins/slick/slick.min.js"></script>
 
-<script src="https://m2mtechconnect.github.io/plugins/venobox/venobox.min.js"></script>
+<script src="https://m2mtechconnect.com/plugins/venobox/venobox.min.js"></script>
 
-<script src="https://m2mtechconnect.github.io/plugins/filterizr/jquery.filterizr.min.js"></script>
+<script src="https://m2mtechconnect.com/plugins/filterizr/jquery.filterizr.min.js"></script>
 
-<script src="https://m2mtechconnect.github.io/plugins/google-map/gmap.js"></script>
+<script src="https://m2mtechconnect.com/plugins/google-map/gmap.js"></script>
 
+<script src="https://m2mtechconnect.com/plugins/slate/js/slate.js"></script>
 
-<!-- Main Script -->
-
-<script src="https://m2mtechconnect.github.io/js/script.min.js"></script>
-
-<!-- google analitycs -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
 
 
 
@@ -601,6 +326,8 @@
   display: none;
 }
 </style>
-</body>
+
+
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
 
 </html>
