@@ -8,47 +8,11 @@
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 M2M TECH</copyright><atom:link href="https://m2mtechconnect.com/course/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI Deep Dive I</title>
-      <link>https://m2mtechconnect.com/course/ai_deep_dive_level1/</link>
+      <title>AR Deep Dive</title>
+      <link>https://m2mtechconnect.com/course/ar_deep_dive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m2mtechconnect.com/course/ai_deep_dive_level1/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>AI Marketing</title>
-      <link>https://m2mtechconnect.com/course/ai_marketing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/ai_marketing/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>App Design with Flutter</title>
-      <link>https://m2mtechconnect.com/course/app_design_with_flutter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/app_design_with_flutter/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>Building cool Mobile Apps</title>
-      <link>https://m2mtechconnect.com/course/building_cool_mobile_apps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/building_cool_mobile_apps/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>Building stunning websites</title>
-      <link>https://m2mtechconnect.com/course/building_stunning_websites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/building_stunning_websites/</guid>
+      <guid>https://m2mtechconnect.com/course/ar_deep_dive/</guid>
       <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
     </item>
     
@@ -71,20 +35,11 @@
     </item>
     
     <item>
-      <title>Coding Fun with Python</title>
-      <link>https://m2mtechconnect.com/course/coding_fun_with_python/</link>
+      <title>Code Blocks III</title>
+      <link>https://m2mtechconnect.com/course/code_blocks_level3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m2mtechconnect.com/course/coding_fun_with_python/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>Cool Apps with Flutter</title>
-      <link>https://m2mtechconnect.com/course/cool_apps_with_flutter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/cool_apps_with_flutter/</guid>
+      <guid>https://m2mtechconnect.com/course/code_blocks_level3/</guid>
       <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
     </item>
     
@@ -98,43 +53,16 @@
     </item>
     
     <item>
-      <title>Gaming with Embedded System</title>
-      <link>https://m2mtechconnect.com/course/gaming_with_embedded_system/</link>
+      <title>Photoshop Basics</title>
+      <link>https://m2mtechconnect.com/course/photoshop_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://m2mtechconnect.com/course/gaming_with_embedded_system/</guid>
+      <guid>https://m2mtechconnect.com/course/photoshop_basics/</guid>
       <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
     </item>
     
     <item>
-      <title>Internet of Things</title>
-      <link>https://m2mtechconnect.com/course/internet_of_things/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/internet_of_things/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>Python &amp; AI</title>
-      <link>https://m2mtechconnect.com/course/python_and_ai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/python_and_ai/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>Python &amp; Data Science</title>
-      <link>https://m2mtechconnect.com/course/python_and_data_science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://m2mtechconnect.com/course/python_and_data_science/</guid>
-      <description>About Course Through our hands-on-workshops, Tech Bytes team is committed to empowering youths with much needed digital literacy skills.</description>
-    </item>
-    
-    <item>
-      <title>Semester - Summer 2021</title>
+      <title>Semester - Fall 2021</title>
       <link>https://m2mtechconnect.com/course/semester_group_pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
